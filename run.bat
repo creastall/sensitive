@@ -1,0 +1,2 @@
+lua sensitiveCheck.lua
+pause
