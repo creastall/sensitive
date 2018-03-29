@@ -35,7 +35,7 @@ local function checkadd(dict,key,isend)
       dict["" .. key] = tmp
    end
    if isend then
-      tmp["ee"] = 1
+      tmp["end"] = 1
    end
    return tmp
 end
@@ -115,7 +115,7 @@ function BadStringCheck(str,rep)
       else
          found = true
          table.insert(oneword,#oneword+1,i)
-         local en = nextdict["ee"]
+         local en = nextdict["end"]
          if en == 1 then
             if i == #realword then
                 nextdict = ALLBadStringDict
